@@ -46,7 +46,7 @@ log "Cloning repository..." "$YELLOW"
 if [ -d "/App/mf-investment-application" ]; then
     rm -rf /App/mf-investment-application
 fi
-git https://github.com/abhijeet4022/MF-Investment-Application.git /App/mf-investment-application >> "$LOG_FILE" 2>&1
+git clone https://github.com/abhijeet4022/MF-Investment-Application.git /App/mf-investment-application >> "$LOG_FILE" 2>&1
 check_status "Failed to clone repository" "Repository cloned successfully"
 
 # Setup Node.js
